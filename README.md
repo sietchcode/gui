@@ -46,4 +46,5 @@ Get knitty GUI and start the application:
 ## Authors
 
 This tool has been programmed by [ptflea](http://github.com/ptflea)
+
 Update from [sietchcode](https://github.com/sietchcode) for Ubuntu 21.10 64 bits and Processing 3.5.4
