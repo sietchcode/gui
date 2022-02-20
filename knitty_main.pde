@@ -1,6 +1,6 @@
 // Don't forget to place the libraries under sketchbook/libraries/G4P and sketchbook/libraries/sDrop
-import g4p_controls.*;    // http://sourceforge.net/projects/g4p/
-import sojamo.drop.*;    //  http://www.sojamo.de/libraries/drop/
+import g4p_controls.*;    // http://sourceforge.net/projects/g4p/ tested with version 4.3.8
+import drop.*;    //  tested with drop 1.0.2 as replacement for sdrop
 
 PFont UsedFont;
 
@@ -29,8 +29,6 @@ boolean  passapSecondRowToggle = false;
 
 int rowCounter = 1;
 
-int GUIwidth = 1270;  //size of the GUI
-int GUIheigth = 750;
 int totalWidth = 180; //all needles
 int workingWidth = 100; // number of working needles
 int workingWidthOffset = 0;
@@ -186,8 +184,8 @@ void setup() {
   
   knittySettings = new JSONObject();
 
-  size(GUIwidth, GUIheigth);
-
+  size(1270, 750);
+  noSmooth();
   UsedFont = createFont("Arial", 16, true); 
 
 
@@ -264,7 +262,6 @@ void drawPattern() {
       pushMatrix();
       translate((movePatternX+i*patternGridXgap)*scalingfactor+((i*patternImage.width*scalingfactor+scalingfactor)*patternScaleX), ((movePatternY-j*patternGridYgap)*scalingfactor-((j*patternImage.height*scalingfactor+scalingfactor)*patternScaleY)));
       image(patternImage, gridStartX+(totalWidth/2-patternImage.width/2+1)*scalingfactor, gridStartY+(displayWorkingRow-patternImage.height+2)*scalingfactor, patternImage.width*scalingfactor*patternScaleX, patternImage.height*scalingfactor*patternScaleY);
-      noSmooth();
       popMatrix();
 
       //demirror pattern in array
@@ -317,7 +314,6 @@ void drawPatternBack() {
       pushMatrix();
       translate((movePatternBackX+i*patternGridBackXgap)*scalingfactor+((i*patternImageBack.width*scalingfactor+scalingfactor)*patternScaleBackX), ((movePatternBackY-j*patternGridBackYgap)*scalingfactor-((j*patternImageBack.height*scalingfactor+scalingfactor)*patternScaleBackY)));
       image(patternImageBack, gridStartX+(totalWidth/2-patternImageBack.width/2+1)*scalingfactor, gridStartY+(displayWorkingRow-patternImageBack.height+2)*scalingfactor, patternImageBack.width*scalingfactor*patternScaleBackX, patternImageBack.height*scalingfactor*patternScaleBackY);
-      noSmooth();
       popMatrix();
 
       //demirror pattern in array
