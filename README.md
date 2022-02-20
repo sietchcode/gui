@@ -12,7 +12,7 @@ Installation with last Processing stable version 3.x (tested with 3.5.4). Versio
 Optional: install Arial fonts for Ubuntu with `sudo apt install ttf-mscorefonts-installer` (this requires to accept Microsft license).
 
 Get knitty GUI and start the application:
-- clone the knitty/gui repo including 2022 update for Ubuntu 21.10 into the ~/sketches folder and rename `gui` into `knitty_main`
+- clone the knitty/gui repo including 2022 update for Ubuntu 21.10 into the ~/sketches folder and rename `knitty_gui_ubuntu_21_10_update` into `knitty_main`
 - in Processing IDE open the `knitty_main.pde` file
 - in the *sketch menu* check available libraries and import *Drop* and *G4P* libraries if they are not listed. *sojamo drop* is now replaced by *Drop*
 - execute the application using `Ctrl-R` shortcut for example
