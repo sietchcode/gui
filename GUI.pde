@@ -71,7 +71,7 @@ void displayButtonsGUI() {
     arduinoSerialportDropListItems[i] = Serial.list()[i];
   }
 
-  arduinoSerialportChooseList = new GDropList(this, x, y, 70, 60, arduinoSerialportDropListItems.length);
+  arduinoSerialportChooseList = new GDropList(this, x, y, 70, 400, arduinoSerialportDropListItems.length);
   //preselect arduinoSerialport from setup
   arduinoSerialportChooseList.setItems(arduinoSerialportDropListItems, serialport);
   arduinoSerialportChooseList.tag = "arduinoSerialportTag";
@@ -317,4 +317,3 @@ void drawColourDefinition() {
     }
   }
 }
-
