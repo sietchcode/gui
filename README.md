@@ -1,5 +1,7 @@
 # Knitty GUI
 
+This is the Windows/Linux GUI of knitty software to drive knitting machines needles. There is a separate [repository for the Arduino firmware](https://github.com/sietchcode/knitty_firmware).
+
 ## Installation (2022 update for Ubuntu 21.10 64 bits and Processing 3.5.4)
 Installation with last Processing stable version 3.x (tested with 3.5.4). Version 4.x requires additional code update and is not yet supported:
 
