@@ -1,31 +1,7 @@
 # Knitty GUI
 
-## Installation
-
-### GIT
-
-Just clone that repository with:
-
-    git clone https://github.com/knitty/gui.git knitty_main
- 
-### ZIP
-You can also download the latest version as zip file here:
-
-    https://github.com/knitty/gui/archive/master.zip
-	
-
-### Processing (initial 2016 version)
-Processing requires that the folder has the same name as the main .pde file (knitty_main). 
-
-Place the files under sketchbook/knitty_main
-
-Don't forget to download and place the libraries under sketchbook/libraries/G4P and sketchbook/libraries/sDrop
-  g4p_controls.*;    // http://sourceforge.net/projects/g4p/
-  sojamo.drop.*;    //  http://www.sojamo.de/libraries/drop/
-
-
-## Processing (2022 update for Ubuntu 21.10 64 bits and Processing 3.5.4)
-Install last Processing stable version 3.x (tested with 3.5.4). Version 4.x requires additional code update and is not yet supported:
+## Installation (2022 update for Ubuntu 21.10 64 bits and Processing 3.5.4)
+Installation with last Processing stable version 3.x (tested with 3.5.4). Version 4.x requires additional code update and is not yet supported:
 
 - download the [Processing 3.5.4 release for Linux 64 bits](https://github.com/processing/processing/releases/download/processing-0270-3.5.4/processing-3.5.4-linux64.tgz)
 - decompress the content in your home folder 
