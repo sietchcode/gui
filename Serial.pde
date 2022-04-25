@@ -79,8 +79,14 @@ void executeCommand(char cmd, String payload) {
     break;
 
   case COM_CMD_PATTERN_END:
-    buttonKnitRow(0);
-    // moveRowInGUI();
+    // do not send another row if test button is used
+    if (GUIlocked==false) {
+      knittigInProgress=false;
+    }
+    else {
+      buttonKnitRow(0);
+      // moveRowInGUI();
+    }
     println("Pattern end");
     break;
   }
@@ -147,4 +153,3 @@ void parserSerialStream() {
     break;
   }
 }
-

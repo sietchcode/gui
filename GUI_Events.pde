@@ -358,6 +358,14 @@ void oneRowBackKinittingButtonKeyboard() {
   InfoText = ("One Row Back");
 }
 
+void KnitOneRowuttonKeyboard() {
+  if (GUIlocked == false) { // ingnore during continuous knitting
+    knittigInProgress = true;
+    InfoText = ("Knit one row");
+    buttonKnitRow(0);
+  }
+}
+
 
 
 void startKinittingButtonKeyboard() {

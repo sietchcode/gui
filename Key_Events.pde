@@ -9,6 +9,10 @@ void keyPressed() {
   if (key=='o') {
     oneRowBackKinittingButtonKeyboard();
   } 
+  
+  if (key==' ') {
+    KnitOneRowuttonKeyboard();
+  } 
 
   //nope if GUI is locked  
   if (GUIlocked == false) {
@@ -45,4 +49,3 @@ void keyPressed() {
   }
   saveBasicKnittySettings();
 }
-
